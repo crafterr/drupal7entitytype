@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193de65f-3beb-4c32-b07c-c2da7ffc2503" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/includes/myblock.page.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/entitydemo/includes/entitydemo.demo1.inc" afterPath="$PROJECT_DIR$/sites/all/modules/custom/entitydemo/includes/entitydemo.demo1.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php" afterPath="$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +19,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myblock.module" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myblock.module" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myblock.page.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/includes/myblock.page.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/module.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="928" column="9" lean-forward="false" selection-start-line="928" selection-start-column="9" selection-end-line="928" selection-end-column="9" />
+              <folding>
+                <marker date="1553061685000" expanded="true" signature="4469:4589" ph="SELECT name,... system" />
+                <marker date="1553061685000" expanded="true" signature="5939:6048" ph="SELECT * FRO... system" />
+                <marker date="1553061685000" expanded="true" signature="15982:16045" ph="SELECT statu... system" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/block/block.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="333" column="9" lean-forward="false" selection-start-line="333" selection-start-column="9" selection-end-line="333" selection-end-column="9" />
+              <folding>
+                <marker date="1553061685000" expanded="true" signature="8918:8968" ph="SELECT bid, block_custom" />
+                <marker date="1553061685000" expanded="true" signature="9722:9778" ph="SELECT body,... block_custom" />
+                <marker date="1553061685000" expanded="true" signature="19219:19264" ph="SELECT * FRO... block_custom" />
+                <marker date="1553061685000" expanded="true" signature="21487:21696" ph="SELECT DISTI... block" />
+                <marker date="1553061685000" expanded="true" signature="23693:23735" ph="SELECT 1 FRO... block" />
+                <marker date="1553061685000" expanded="true" signature="24004:24046" ph="SELECT * FRO... block" />
+                <marker date="1553061685000" expanded="true" signature="25981:26044" ph="SELECT * FRO... block" />
+                <marker date="1553061685000" expanded="true" signature="27441:27484" ph="SELECT modul... " />
+                <marker date="1553061685000" expanded="true" signature="35494:35555" ph="SELECT name system" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,11 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mytemplate.tpl.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entitydemo.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/entitydemo/entitydemo.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="4" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="18" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mytemplate.tpl.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,8 +127,10 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/entitydemo/includes/entitydemo.demos.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/entitydemo/includes/entitydemo.demo1.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.page.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/includes/myblock.page.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php" />
       </list>
     </option>
   </component>
@@ -181,6 +236,16 @@
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="myblock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drupal7dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drupal7dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="all" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="myblock" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -202,6 +267,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/myblock/includes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/myblock" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom" />
@@ -229,12 +297,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553345231291</updated>
-      <workItem from="1553345233343" duration="5153000" />
+      <workItem from="1553345233343" duration="6540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5153000" />
+    <option name="totallyTimeSpent" value="6540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="821" extended-state="6" />
@@ -277,14 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="254" column="28" lean-forward="false" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/entitydemo/entitydemo.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -355,18 +415,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/entitydemo/entitydemo.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="18" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/block/block.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="333" column="9" lean-forward="false" selection-start-line="333" selection-start-column="9" selection-end-line="333" selection-end-column="9" />
+          <folding>
+            <marker date="1553061685000" expanded="true" signature="8918:8968" ph="SELECT bid, block_custom" />
+            <marker date="1553061685000" expanded="true" signature="9722:9778" ph="SELECT body,... block_custom" />
+            <marker date="1553061685000" expanded="true" signature="19219:19264" ph="SELECT * FRO... block_custom" />
+            <marker date="1553061685000" expanded="true" signature="21487:21696" ph="SELECT DISTI... block" />
+            <marker date="1553061685000" expanded="true" signature="23693:23735" ph="SELECT 1 FRO... block" />
+            <marker date="1553061685000" expanded="true" signature="24004:24046" ph="SELECT * FRO... block" />
+            <marker date="1553061685000" expanded="true" signature="25981:26044" ph="SELECT * FRO... block" />
+            <marker date="1553061685000" expanded="true" signature="27441:27484" ph="SELECT modul... " />
+            <marker date="1553061685000" expanded="true" signature="35494:35555" ph="SELECT name system" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/myblock.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/module.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="928" column="9" lean-forward="false" selection-start-line="928" selection-start-column="9" selection-end-line="928" selection-end-column="9" />
+          <folding>
+            <marker date="1553061685000" expanded="true" signature="4469:4589" ph="SELECT name,... system" />
+            <marker date="1553061685000" expanded="true" signature="5939:6048" ph="SELECT * FRO... system" />
+            <marker date="1553061685000" expanded="true" signature="15982:16045" ph="SELECT statu... system" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/includes/myblock.page.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/myblock/templates/mytemplate.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
