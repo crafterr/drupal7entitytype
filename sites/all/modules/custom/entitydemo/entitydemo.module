@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ * My hooks
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function entitydemo_menu() {
+  $items = [];
+  $items['demo'] = [
+    'title' => 'Entity Demos',
+    'description' => 'List of entity demo provided by this module .',
+    'access callback' => TRUE,
+    'page callback' => 'entitydemo_demos',
+    'menu_name' => 'navigation',
+    'file' => 'includes/entitydemo.demos.inc',
+  ];
+  $items['demo/1'] = [
+    'title' => 'Entity load demo',
+    'description' => 'Demonstrates API functions that make it easier to work with exsiting entities.',
+    'access callback' => TRUE,
+    'page callback' => 'entitydemo_page1',
+    'file' => 'includes/entitydemo.demo1.inc',
+
+  ];
+
+  return $items;
+
+}
