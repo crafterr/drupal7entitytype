@@ -1,0 +1,57 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function myblock_block_info() {
+  $blocks = array();
+  $blocks['myblock'] = array(
+    'info' => t('My Custom Block with template'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function myblock_block_view($delta = '') {
+  $block = [];
+  $node_id = 1;
+  switch ($delta) {
+    case 'myblock':
+      $variables = ['adam','marek','grzesiek'];
+      $variables['node'] = getNode($node_id);
+      $variables['render_node'] = renderNode($node_id);
+      $block['content'] = theme('mytemplate',$variables);
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function myblock_theme($existing, $type, $theme, $path) {
+  return [
+    'mytemplate' => [
+      'variables' => null,
+      'template' => 'templates/mytemplate'
+    ]
+  ];
+}
+
+function getNode($node_id)
+{
+  $node = node_load($node_id);
+  return $node;
+ // $view = node_view($node, 'teaser');
+
+}
+
+function renderNode($node_id)
+{
+  $node = getNode($node_id);
+  $view = node_view($node, 'teaser');
+  return drupal_render($view);
+}
