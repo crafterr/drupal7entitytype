@@ -26,6 +26,14 @@ function entitydemo_menu() {
 
   ];
 
+  $items['demo/2'] = [
+    'title' => 'EntityFieldQuery',
+    'description' => 'Demonstrates API EntityFieldQuery',
+    'access callback' => TRUE,
+    'page callback' => 'entitydemo_page2',
+    'file' => 'includes/entitydemo.demo2.inc'
+  ];
+
   return $items;
 
 }
