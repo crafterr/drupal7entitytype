@@ -52,7 +52,9 @@ function myblock_theme($existing, $type, $theme, $path) {
   return [
     'mytemplate' => [
       'variables' => null,
-      'template' => 'templates/mytemplate'
+      'original hook' => 'block',
+      'template' => 'mytemplate',
+      'path'          => drupal_get_path('module', 'myblock') . '/templates',
     ]
   ];
 }
