@@ -1,0 +1,73 @@
+<?php
+/**
+ * @file
+ * My hooks
+ */
+
+/**
+ * Implements hook_entity_info().
+ */
+function videoentity_entity_info() {
+  $info = [];
+  $info['video'] = [
+    //Human readable label
+    'label' => t('Video'),
+    //Table for storing entity data define in hook_schema
+    'base table' => 'videoentity_video',
+    //This help Entity Api know how to query your custom table
+    'entity keys' => [
+      'id' => 'id'
+    ]
+  ];
+  return $info;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function videoentity_menu() {
+  $items = [];
+  $items['videoentity'] = [
+    'title' => 'Demo Page',
+    'page callback' => 'videoentity_demo_page',
+    'access callback' => true,
+    'menu' => 'navigation'
+  ];
+  $items['video/%videoentity'] = array(
+    'title' => 'Video',
+    'page callback' => 'videoentity_view_entity',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Callback for /videoentity page.
+ *
+ * Just a place to test things out and be able to see the results on a page.
+ */
+function videoentity_demo_page() {
+  $video = entity_load('video', array(1));
+  kpr($video);
+
+  // Or load it with EFQ.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'video');
+  $results = $query->execute();
+  kpr($results);
+  return 'hello there!';
+}
+
+/**
+ * Callback for /video/ID page.
+ *
+ * Just a place to render a complete video entity.
+ */
+function videoentity_view_entity($video) {
+  drupal_set_title($video->name);
+  $video_entity = entity_view('video', array($video->id => $video));
+  kpr($video_entity);
+  return $video_entity;
+}
