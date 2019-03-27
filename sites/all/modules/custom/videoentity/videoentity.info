@@ -1,4 +1,7 @@
 name = Video Entity
-description = "Provide a custom Video Entity for tracking and displaying video embed code"
+description = Provide a custom Video Entity for tracking and displaying video embed codes.
 core = 7.x
+files[] = includes/entity.video_entity.inc
+files[] = includes/entity.video_controller.inc
+files[] = includes/entity.video_entity_ui_controller.inc
 dependencies[] = entity
