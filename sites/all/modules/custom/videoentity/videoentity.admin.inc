@@ -2,6 +2,7 @@
 
 /**
  * Form for adding / editing a video entity.
+ * hook: ENTITY_TYPE_form => video_form
  */
 function video_form($form, &$form_state, $video = NULL) {
   $form['name'] = array(
