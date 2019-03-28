@@ -1,0 +1,4 @@
+name = My Entity
+description = Provide a custom My Entity for tracking and displaying video embed codes.
+core = 7.x
+dependencies[] = entity

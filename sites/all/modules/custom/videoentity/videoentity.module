@@ -32,18 +32,46 @@ function videoentity_entity_info() {
     // Other options provided by the EntityAPI contrib module:
     // 'controller class' => 'EntityAPIController ',
     // 'controller class' => 'EntityAPIControllerExportable',
-    'controller class' => 'VideoEntityController',
+     'controller class' => 'VideoEntityController',
      // The information below is used to extend the EntityDefaultUIController
-   /*  'admin ui' => array(
+     'admin ui' => array(
        'path' => 'admin/videoentity',
        'controller class' => 'VideoEntityUIController',
        'menu wildcard' => '%videoentity',
        'file' => 'videoentity.admin.inc',
-     ),*/
+     ),
+    'module' => 'videoentity',
+    //Access Callback to determinate permisions
+    'access callback' => 'videoentity_access_callback'
 
   );
 
   return $info;
+}
+
+
+/**
+ * Implements hook_permission().
+ */
+function videoentity_permission() {
+  return [
+    'administer videos' => [
+      'title' => t('Administer Video Entities')
+    ],
+    'view videos' => [
+      'title' => t('View Video Entities')
+    ]
+  ];
+}
+
+/**
+ * Check access permissions for video entities
+ */
+function videoentity_access_callback($op, $videoentity = NULL, $account = NULL) {
+  if (($op == 'view' && user_access('view videos',$account)) || user_access('administer videos',$account)) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -57,8 +85,8 @@ function videoentity_menu() {
     'access callback' => TRUE,
     'menu' => 'navigation',
   );
-  $items['video/%videoentity'] = array(
-    'title' => 'Video',
+  $items['myvideo/%videoentity'] = array(
+    'title' => 'Videodsds',
     'page callback' => 'videoentity_view_entity',
     'page arguments' => array(1),
     'access callback' => TRUE,
@@ -101,6 +129,11 @@ function videoentity_demo_page() {
  */
 function videoentity_view_entity($video) {
 
+  kpr($video);
+  return array
+  (
+    '#markup' => t('Video entity: @video',['@video'=>$video->name]),
+  );
   drupal_set_title($video->name);
   $video_entity = entity_view('video', array($video->id => $video));
   kpr($video_entity);
