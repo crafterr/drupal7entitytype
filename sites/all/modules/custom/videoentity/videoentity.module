@@ -52,6 +52,19 @@ function videoentity_entity_info() {
           'access arguments' => ['administer video']
         ]
       ]
+    ],
+    'views controller class' => 'EntityDefaultViewsController',
+    //custom view modes
+    'view modes' => [
+      'non_member' => [
+        'label' => t('Non Member'),
+        'custom settings' => FALSE,
+      ],
+      'member' => [
+        'label' => t('Member'),
+        'custom settings' => FALSE,
+      ]
+
     ]
 
   );
@@ -140,7 +153,7 @@ function videoentity_demo_page() {
 function videoentity_view_entity($video) {
   drupal_set_title($video->name);
 
-  $video_entity = entity_view('video', array($video->id => $video));
+  $video_entity = entity_view('video', array($video->id => $video),'member');
   return $video_entity;
 }
 
