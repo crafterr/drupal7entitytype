@@ -85,7 +85,7 @@ function videoentity_menu() {
     'access callback' => TRUE,
     'menu' => 'navigation',
   );
-  $items['myvideo/%videoentity'] = array(
+  $items['video/%videoentity'] = array(
     'title' => 'Videodsds',
     'page callback' => 'videoentity_view_entity',
     'page arguments' => array(1),
@@ -128,15 +128,9 @@ function videoentity_demo_page() {
  * Just a place to render a complete video entity.
  */
 function videoentity_view_entity($video) {
-
-  kpr($video);
-  return array
-  (
-    '#markup' => t('Video entity: @video',['@video'=>$video->name]),
-  );
   drupal_set_title($video->name);
+
   $video_entity = entity_view('video', array($video->id => $video));
-  kpr($video_entity);
   return $video_entity;
 }
 
