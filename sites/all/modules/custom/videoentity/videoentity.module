@@ -42,7 +42,17 @@ function videoentity_entity_info() {
      ),
     'module' => 'videoentity',
     //Access Callback to determinate permisions
-    'access callback' => 'videoentity_access_callback'
+    'access callback' => 'videoentity_access_callback',
+    'fieldable' => TRUE,
+    'bundles' => [
+      'video' => [
+        'label' => t('Video'),
+        'admin' => [
+          'path' => 'admin/videoentity',
+          'access arguments' => ['administer video']
+        ]
+      ]
+    ]
 
   );
 
