@@ -72,6 +72,54 @@ function videoentity_entity_info() {
   return $info;
 }
 
+/**
+ * Implements hook_entity_property_info().
+ * implementacja wlasciewosci pol w widoku np created at na date
+ */
+function videoentity_entity_property_info() {
+  $info = [];
+  $properties = &$info['video']['properties'];
+  $properties['id'] = [
+    'label' => t('Video Id'),
+    'description' => t('The unique ID of video'),
+    'type' => 'integer',
+    'schema field' => 'id'
+  ];
+  $properties['name'] = [
+    'label' => t('Name'),
+    'description' => t('Name of the video'),
+    'type' => 'text',
+    'schema field' => 'name'
+  ];
+  $properties['embedcode'] = [
+    'label' => t('EmbedCode'),
+    'description' => t('Youtube embed code for video'),
+    'type' => 'text',
+    'schema field' => 'embedcode'
+  ];
+  $properties['created_at'] = [
+    'label' => t('Created date'),
+    'description' => t('Date the video was created'),
+    'type' => 'date',
+    'schema field' => 'created_at'
+  ];
+  $properties['updated_at'] = [
+    'label' => t('Updated date'),
+    'description' => t('Date the video was updated'),
+    'type' => 'date',
+    'schema field' => 'updated_at'
+  ];
+  $properties['duration'] = [
+    'label' => t('Video duration'),
+    'description' => t('The duration of video'),
+    'type' => 'integer',
+    'schema field' => 'duration'
+  ];
+
+
+  return $info;
+}
+
 
 /**
  * Implements hook_permission().
@@ -114,6 +162,7 @@ function videoentity_menu() {
     'page arguments' => array(1),
     'access callback' => TRUE,
   );
+
 
   return $items;
 }

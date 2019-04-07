@@ -7,4 +7,9 @@
  */
 class VideoEntityUIController extends EntityDefaultUIController {
 
+  public function overviewTableHeaders($conditions, $rows, $additional_header = []) {
+    $header =  parent::overviewTableHeaders($conditions, $rows, $additional_header);
+    $header[0] = 'Video';
+    return $header;
+  }
 }

@@ -7,6 +7,8 @@
  * sites/all/modules/contrib/entity/includes/entity.inc
  */
 class VideoEntity extends Entity {
+
+
   /**
    * Override this in order to implement a custom default URI.
    */
